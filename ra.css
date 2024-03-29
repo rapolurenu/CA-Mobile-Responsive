@@ -99,25 +99,20 @@ body {
     margin: 0;
   }
   
-  
-  @media screen and (max-width: 480px) {
-    .text {
-      font-size: 16px;
-    }
-    .img{
-      max-width: 100%;
-    }
-    html {
-      font-size: 1em;
+  @media screen and (max-width: 768px) {
+    .sidebar {
+        width: 150px; /* Adjusted sidebar width for smaller screens */
     }
     
-    h1 {
-      font-size: 2rem;
+    .main-container {
+        margin-left: 150px; /* Adjusted margin for main container */
     }
-    
-    @media (min-width: 1200px) {
-      h1 {
-        font-size: 4rem;
-      }
+
+    .list {
+        flex-direction: column; /* Displaying items in a column on smaller screens */
     }
-  }
+
+    .item {
+        width: 100%; /* Full width for items on smaller screens */
+    }
+}
